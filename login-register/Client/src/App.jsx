@@ -1,10 +1,16 @@
 import React, { useState } from 'react'
 import Sign from './sign'
+import Home from './home'
 
 
 function App() {
+  const [home, setHome] = useState(false)
   return (
-    <><Sign/></>
+    <>
+    {
+      home? <Home/>:<Sign setHome={setHome}/>
+    }
+    </>
   )
 }
 

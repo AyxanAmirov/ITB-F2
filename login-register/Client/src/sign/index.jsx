@@ -4,12 +4,12 @@ import SignIn from './signIn'
 
 
 
-function Sign() {
-    const [sign, setSign] = useState(true)
+function Sign({setHome}) {
+    const [sign, setSign] = useState(false)
   return (
     <div className='body'>
       {
-        sign ?<Register/> : <SignIn/>
+        sign ?<Register setSign={setSign} setHome={setHome}/> : <SignIn setHome={setHome} setSign={setSign}/>
         
       }
     </div>

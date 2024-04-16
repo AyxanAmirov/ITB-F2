@@ -1,3 +1,28 @@
 {
-  "user": []
+  "user": [
+    {
+      "id": "073f",
+      "userName": "Voluptatem iste ut e",
+      "userEmail": "wepetuvir@mailinator.com",
+      "userPass": "Pa$$w0rd!"
+    },
+    {
+      "id": "dc00",
+      "userName": "Ad assumenda in id ",
+      "userEmail": "zasydikace@mailinator.com",
+      "userPass": "Pkjjb;lm;mnlkm"
+    },
+    {
+      "id": "2a3c",
+      "userName": "NIcat",
+      "userEmail": "nicat14@gmail.com",
+      "userPass": "Nicat28"
+    },
+    {
+      "id": "6d03",
+      "userName": "Fugiat irure volupt",
+      "userEmail": "rujemutyq@mailinator.com",
+      "userPass": "Pa$$w0rd!"
+    }
+  ]
 }

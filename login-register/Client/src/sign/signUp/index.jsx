@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./style.css";
-function Register() {
+function Register({setHome,setSign}) {
   const [user, setUser] = useState({
     userName: "",
     userEmail: "",
     userPass: "",
   });
+  const [showPass, setShowPass] = useState(false)
+
   const addUser = (e) => {
     e.preventDefault();
     fetch("http://localhost:3000/user")
@@ -14,8 +16,8 @@ function Register() {
         let serverEmail = data.find(
           (data) => data.userEmail === user.userEmail
         );
-        if (serverEmail.length > 0) {
-          console.log("İstifadəçi mövcuddur");
+        if (serverEmail) {
+          alert("İstifadəçi mövcuddur");
         } else {
           if (user.userPass.length > 5) {
             fetch("http://localhost:3000/user", {
@@ -30,8 +32,9 @@ function Register() {
               userEmail: "",
               userPass: "",
             });
+            setHome(true)
           } else {
-            console.log("Şifrə 5 simvoldan az olmamalıdır");
+            alert("Şifrə 5 simvoldan az olmamalıdır");
           }
         }
       });
@@ -56,14 +59,24 @@ function Register() {
         value={user.userEmail}
       />
       <input
-        type="password"
+       type={showPass ? "text":"password"}
         className="user-inform"
         required
         placeholder="Password"
         onChange={(e) => setUser({ ...user, userPass: e.target.value })}
         value={user.userPass}
       />
+      <div className="check-box">
+        <input
+          id="tmp-28"
+          type="checkbox"
+          onChange={() => setShowPass(!showPass)}
+        />
+        <label htmlFor="tmp-28">Show Password</label>
+      </div>
       <button className="btn">Sign Up</button>
+      <button className="btn-second" onClick={()=>setSign(false)}>Sign In</button>
+
     </form>
   );
 }

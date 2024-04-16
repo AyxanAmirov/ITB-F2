@@ -1,0 +1,10 @@
+.btn-second{
+    border: none;
+    background-color: transparent;
+    margin-left: 130px;
+}
+.check-box{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
