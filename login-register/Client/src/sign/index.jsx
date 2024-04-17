@@ -9,7 +9,7 @@ function Sign({setHome}) {
   return (
     <div className='body'>
       {
-        sign ?<Register setSign={setSign} setHome={setHome}/> : <SignIn setHome={setHome} setSign={setSign}/>
+        sign ? <Register setSign={setSign} setHome={setHome}/> : <SignIn setHome={setHome} setSign={setSign}/>
         
       }
     </div>
