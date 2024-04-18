@@ -1,0 +1,39 @@
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+}
+.company-name {
+  font-size: 24px;
+  color: black;
+}
+.company-name span{
+    color: blueviolet;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-items {
+  color: black;
+}
+#search-input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid blueviolet;
+}
+.search-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.search-btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 20px;
+}
