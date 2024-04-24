@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-function Navbar() {
+function Navbar({searchFilms}) {
+const [searchMovie, setSearchMovie] = useState()
+const searched=(e)=>{
+  e.preventDefault()
+  searchFilms(searchMovie)
+}
   return (
     <div className="navigation">
       <div className="col-lg-2"><h1 className="company-name">Star <span>Film</span></h1></div>
@@ -22,8 +27,8 @@ function Navbar() {
         </ul>
       </div>
       <div className="col-lg-2">
-        <form className="search-form">
-          <input type="search"  id="search-input" placeholder="Search Film" />
+        <form className="search-form" onSubmit={searched}>
+          <input type="search"  id="search-input" placeholder="Search Film"  onChange={(e)=>setSearchMovie(e.target.value)}/>
           <button type="submit" className="search-btn">Search</button>
         </form>
       </div>

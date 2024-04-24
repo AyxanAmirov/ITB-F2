@@ -1,3 +1,20 @@
 {
-    "User":[]
+  "FavList": [
+    {
+      "id": "552d",
+      "Title": "Batman Returns",
+      "Year": "1992",
+      "imdbID": "tt0103776",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOGZmYzVkMmItM2NiOS00MDI3LWI4ZWQtMTg0YWZkODRkMmViXkEyXkFqcGdeQXVyODY0NzcxNw@@._V1_SX300.jpg"
+    },
+    {
+      "id": "1213",
+      "Title": "Batman",
+      "Year": "1989",
+      "imdbID": "tt0096895",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZWQ0OTQ3ODctMmE0MS00ODc2LTg0ZTEtZWIwNTUxOGExZTQ4XkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_SX300.jpg"
+    }
+  ]
 }

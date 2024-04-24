@@ -1,0 +1,25 @@
+.list-heading{
+    text-align: center;
+    color: blueviolet;
+}
+.grid-container{
+    max-width: 1140px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 380px;
+    gap: 50px;
+}
+.remove-favList{
+    color: red;
+    font-size: 23px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.whatsapp{
+    font-size: 23px;
+    margin-left: 10px;
+    cursor: pointer; 
+}

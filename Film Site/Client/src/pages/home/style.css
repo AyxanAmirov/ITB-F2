@@ -1,0 +1,74 @@
+.film-card{
+    width: 100%;
+    box-shadow: 0 0 4px 0 blueviolet;
+    transition: .3s all;
+    border-radius: 10px;
+    height: 100%;
+}
+.film-poster{
+    width: 100%;
+    height: 280px;
+    margin-bottom: 5px;
+}
+.name-year{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.name{
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.year{
+    color: blueviolet;
+    font-weight: 600;
+
+}
+.film-card:hover{
+    box-shadow: 0 0 15px 0 blueviolet;
+}
+.add-fav{
+    font-size: 23px;
+    color: blueviolet;
+}
+.remove-fav{
+    color: red;
+    font-size: 23px;
+}
+.fav-icons{
+    padding: 10px;
+}
+/* loader */
+.loader-body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    width: 80px;
+    aspect-ratio: 1;
+    display: grid;
+    border-radius: 50%;
+    background: conic-gradient(#25b09b 25%,#f03355 0 50%,#514b82 0 75%,#ffa516 0);
+    animation: l22 2s infinite linear;
+  }
+  .loader::before,
+  .loader::after {
+     content: "";
+     grid-area: 1/1;
+     margin: 15%;
+     border-radius: 50%;
+     background: inherit;
+     animation: inherit;
+  }
+  .loader::after {
+     margin: 25%;
+     animation-duration: 3s;
+  }
+  @keyframes l22 {
+    100% {transform: rotate(1turn)}
+  }

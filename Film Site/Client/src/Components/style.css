@@ -37,3 +37,11 @@
   color: white;
   border-radius: 20px;
 }
+.list-card{
+  width: 100%;
+  box-shadow: 0 0 4px 0 blueviolet;
+  transition: .3s all;
+  border-radius: 10px;
+  height: 100%;
+  padding: 10px;
+}
